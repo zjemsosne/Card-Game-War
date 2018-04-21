@@ -24,7 +24,7 @@ import ReactDOM from 'react-dom';
               <p className={'opponentInfo'}>
                 Grasz przeciwko:
               </p>
-              <span className='computerName'>{pic.name.first + " " + pic.name.last}</span>
+              <span className='computerName'>{pic.name.first[0].toUpperCase() + pic.name.first.slice(1) + " " + pic.name.last[0].toUpperCase() + pic.name.last.slice(1)}</span>
               <br></br>
               <img id='computerPlayerAvatar' src={pic.picture.large} data-test={pic.name.first + " " + pic.name.last} onClick={this.handleClick}/>
             </div>
