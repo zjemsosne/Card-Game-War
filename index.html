@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Card Game</title>
+    <script src="js/out.js"></script>
+</head>
+<body>
+
+  <div class='background'>
+    <h1>WOJNA</h1>
+    <p class='gameRules'>
+      Zasady gry są bardzo proste. Przetasowaną talię kart dzieli się na dwie części, rozdaje graczom i kładzie koszulkami do góry. Pierwszy i drugi zawodnik równocześnie wykładają po jednej karcie i porównują ich wartości (względem starszeństwa – kolory nie odgrywają roli). Gracz mający kartę o wyższej wartości odbiera karty i kładzie je pod spodem swojej talii. Jeśli karty mają taką samą siłę (as na asa, król na króla, itp.), rozpętuje się wojna, chyba że gra się w więcej osób i słabsze karty nie walczą np. 9-3-3 gracze z trójkami nie walczą; należy odkryć po jednej karcie, położyć je koszulkami do góry na swoich kartach odkrytych, a następnie wyciągnąć następną kartę, położyć odkryte na zakrytych kartach i wówczas są one porównywane. Karta o wyższej wartości wygrywa, a zwycięzca wojny odbiera wszystkie karty wykorzystane w wojnie. Proces nie jest powtarzany, jeśli w okresie wojny znowu nie można wyłonić zwycięzcy - wygrywa gracz.
+    </p>
+    <div id='buttonPlace'></div>
+    <div id="app"></div>
+    <div id='board'>
+      <div class='center'>
+        <div id='compCard' class='card'></div>
+        <span>VS</span>
+        <div id='playerCard' class='card'></div>
+        <br></br>
+        <div id='cardsOnBoard'></div>
+      </div>
+    </div>
+    <div id='cardList'></div>
+  </div>
+
+</body>
+</html>

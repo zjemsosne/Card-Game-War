@@ -1,0 +1,141 @@
+body {
+  background-color: rgb(9, 46, 32);
+  font-family: serif;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gameRules {
+  background-color: rgb(241, 234, 162);
+  text-align: justify;
+  border: 3px dotted black;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+#app, #buttonPlace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#startButton  {
+  padding: 16px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid #f44336;
+}
+
+#startButton:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+#computerPlayerAvatar {
+  border-radius: 50%;
+  border: 2px solid black;
+  display: flex;
+  margin: auto;
+}
+
+#computerBox {
+  display: block;
+}
+
+.opponentInfo {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+
+.computerName {
+  font-size: 35px;
+}
+
+.cardImageDiv {
+  margin: -3px;
+  display: inline-block;
+}
+
+.cardMain {
+  width: 80px;
+  height: auto;
+  object-fit: cover;
+}
+
+.background {
+  margin-top: 15px;
+  margin: auto;
+  width: 35%;
+  background-color: rgb(241, 241, 241);
+  border: 1px solid black;
+  border-radius: 1%;
+}
+
+.center {
+  margin: auto;
+  width: 85%;
+  border: 5px solid rgb(163, 43, 11);
+  background-color: rgb(0, 125, 0);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  margin: 25px;
+  width: 75px;
+  height: 104px;
+  border: 2px dotted red;
+}
+
+#cardList {
+  padding-top: 15px;
+  margin-left: 60px;
+  width: 90%;
+}
+
+.showBack > div > div:nth-child(2) > div > img {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(cardBack.png) no-repeat;
+  /*width: 75px;*/
+  height: 104px;
+  padding-left: 80px;
+  margin-left: 10px;
+  margin-top: -117px;
+}
+
+.card > div > div:nth-child(3) > div > img {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* background: url(cardBack.png) no-repeat; */
+  /* width: 75px; */
+  /* height: 104px; */
+  /* padding-left: 0px; */
+  margin-left: 22px;
+  margin-top: -125px;
+}
+
+/*img[data-index='26'] {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(cardBack.png) no-repeat;
+  width: 75px;
+  height: 104px;
+  padding-left: 80px;
+}*/
