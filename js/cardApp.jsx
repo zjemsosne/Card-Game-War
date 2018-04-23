@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { UserList } from './userApp.jsx';
-import { CardRandom } from './cardsRandomizer.jsx';
+import { CardRandom } from './cardsRandomizer2.jsx';
 
 document.addEventListener('DOMContentLoaded', function(){
 

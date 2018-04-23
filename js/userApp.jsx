@@ -5,13 +5,13 @@ import ReactDOM from 'react-dom';
     constructor(props) {
       super(props)
       this.state = {
-        pictures: []
+        pictures: [],
       }
     }
 
     handleClick = (event) => {
-
-      alert(event.target.getAttribute('data-test'))
+        this.setState({ animate: true });
+        console.log(this.state.animate)
     }
 
     componentWillMount() {
@@ -20,19 +20,22 @@ import ReactDOM from 'react-dom';
       }).then(data => {
         let pictures = data.results.map((pic) => {
           return(
-            <div id='computerBox' key={pic.dob}>
+            <div id='computerBox' key={pic.dob} >
               <p className={'opponentInfo'}>
                 Grasz przeciwko:
               </p>
               <span className='computerName'>{pic.name.first[0].toUpperCase() + pic.name.first.slice(1) + " " + pic.name.last[0].toUpperCase() + pic.name.last.slice(1)}</span>
               <br></br>
-              <img id='computerPlayerAvatar' src={pic.picture.large} data-test={pic.name.first + " " + pic.name.last} onClick={this.handleClick}/>
+              <img id='computerPlayerAvatar' src={pic.picture.large} data-test={pic.name.first + " " + pic.name.last} onClick={this.handleClick} />
             </div>
           )
-
         })
         this.setState({pictures: pictures});
       })
+    }
+
+    componentDidMount() {
+
     }
 
     render() {

@@ -8,7 +8,7 @@ import ReactDOM from 'react-dom';
         cards: [],
         cardsPlayer: [],
         cardsComputer: [],
-        cardsValues: []
+        cardsValues: [],
       }
     }
 
@@ -290,10 +290,9 @@ import ReactDOM from 'react-dom';
     render() {
       return (
         <div className={'cardListHalfs'}>
-          {this.state.cardsPlayer}
+          {this.state.cardsPlayer[0]} karty: {this.state.cardsPlayer.length}  {this.state.cardsComputer[0]} karty: {this.state.cardsComputer.length}
           <br></br>
           <br></br>
-          {this.state.cardsComputer}
         </div>
 
       )
